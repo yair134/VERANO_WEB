@@ -1,0 +1,26 @@
+th es mas para encabezados 
+ y td e para lo de mas de una tabla
+
+herramientas para saber el numero de color en hexdecimal
+Color picker
+gcolor2
+
+*REGISTRO EQUIPO
+pais 
+continente
+nombre equipo
+escudo
+UNIFORME FOTO
+
+
+*registro jugadores
+-nobre de jugador apellidos
+-numero de playera
+-posicion
+-foto
+-equipo perteneciente
+-edad
+-estatura
+-peso
+-genero
+-CLUB PERTENECIENTE

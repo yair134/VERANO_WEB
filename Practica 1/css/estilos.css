@@ -1,0 +1,71 @@
+body{
+	/*background-image: url("../img/Mundial fondo.jpg");*/
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+table th {
+	background-color:#B8C6D8;
+	color:#000000;
+	font-family:Arial;
+	font-size:14pt;
+}
+
+.renglon_verde_alto {  
+    background-image: url("../img/tablas.jpg"); 
+	/*background-color:#146A2D;*/
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:10pt;
+	text-align:center;
+}
+
+.renglon_verde_bajo {
+	background-image: url("../img/tablas1.jpg"); 
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:10pt;
+	text-align:center;
+}
+
+.menu {
+	border:1px solid #000000;
+	background-color:#F7EC3C;
+}
+
+.menu th {
+	border:1px solid #000000;
+	background-color:#F7EC3C;
+	padding:0;
+}
+
+.menu th a{	
+	color:#000000;
+	font-family:Verdana;
+	font-size:16pt;
+	text-align:center;
+}
+
+.menu th :thalilinx, a:visited{	
+	color:#000000;
+	font-family:Verdana;
+	font-size:16pt;
+	text-align:center;
+	text-decoration: none;
+	
+}
+
+.menu th a:hover{	
+	text-decoration: underline;
+	background-color: #FFFFFF;
+	display:block;
+}
+	
+.renglon_over{
+	background-color:#CBD028;
+	color:#000000;
+	font-family:Arial;
+	font-size:10pt;
+	text-align:center;
+	
+	
