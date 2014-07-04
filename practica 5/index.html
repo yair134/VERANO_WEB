@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Practica 5</title>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>			
+			$(document).ready(
+				function(){
+					//alert("hola javaScript");
+					alert($('#elemento1').css('fontSize'));
+					$("#elemento1").css('fontSize' , '100px');
+					alert($('#elemento1').css('fontSize'));
+					$('#elemento1').hide('slow');
+					$('#elemento1').show('slow');
+					
+					$('#elemento1').click(
+						function(){
+							$(this).hide('slow');
+						}
+					);	
+					
+				   function fncSumar(formu)
+					{
+					formu.resultado.value=(formu.numero1....
+					+(formu.numero2.value*1);
+					} 
+			);			
+		</script>
+		
+		<script language="JavaScript">
+			function suma()
+			{
+			var a = document.fsuma.op1.value //en el DOM esto referencia el valor del primer cuadro
+			var b = document.fsuma.op2.value //esto referencia el valor del segundo cuadro
+			document.fsuma.resultado.value=parseFloat(a)+parseFloat(b) //convertimos a números
+			//los valores de los cuadros de texto se interpretan siempre como cadenas de caracteres
+			}
+		</script>
+		
+    </head>
+
+	<body>
+	
+		<form name="fsuma">
+		num 1<input type="text" name="op1"><br>
+		num 2<input type="text" name="op2"><br>
+		<input name="Suma" type="button" value="Sumar" onClick="suma()">
+		
+		<input type="text" name="resultado" readonly="true">
+		</form> 
+		
+	
+		<div id="container" class="elemento2">
+			<h1><p class="parrafo" id="elemento1"> Texto </p></h1>
+		</div>
+		<div id="container" class="elemento2">
+			<h1 class="titulo">hola</h1>
+			<h2 class="titulo">mundo</h2>
+		</div>
+			
+	</body>
+</html>
