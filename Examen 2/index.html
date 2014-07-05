@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <title>Examen 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script>
+            $(document).ready(
+                    function() {
+
+                        $('#ocultar').hide(0);
+
+                        $('#mostrar').click(
+                                function() {
+
+                                    $('#ocultar').show('slow');
+                                    $('#ocultar2').hide(0);
+                                    $('#ocultar3').hide(0);
+
+                                }
+                        );
+                
+                $('#mostrar2').click(
+                                function() {
+                                    $('#ocultar2').show('slow');
+                                    $('#ocultar3').hide(0);
+                                }
+                        );
+                
+                $('#mostrar3').click(
+                                function() {
+                                    $('#ocultar3').show('slow');
+                                    $('#ocultar2').hide(0);
+                                }
+                        );
+
+                    }
+
+            );
+        </script>
+
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Examen 2</span>
+                    </button>
+                    <a class="navbar-brand" href="#">Examen 2</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-right" role="form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                    </form>
+                </div>   
+            </div>
+        </div>
+
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Examen 2  </h1>
+				<h2>5 de Julio del 2014 </h2>
+                <p><a class="btn btn-primary btn-lg" role="button" id='mostrar'>Click Para Ver formularios</a></p>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <div class="row" id='ocultar'>
+                <div class="col-md-4">
+                    <h2>Equipo</h2>
+                    <br>
+                    <div class="form-group">
+                        <label for="nombre" class="col-sm-12 control-label">Nombre</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="id_pais" class="col-sm-12 control-label">Pais</label>
+                    <select class="form-control" >                        
+                        <option>Croacia</option>
+                        <option>Brasil</option>
+                        <option>Mexico</option>
+                        <option>Canada</option>
+                        <option>China</option>
+                    </select>
+                    <br>
+                    
+                    <div class="form-group">
+                        <label for="escudo" class="col-sm-2 control-label">Escudo</label>
+                        <div class="col-sm-12">
+                            <input type="file" class="form-group" id="bandera" name="escudo">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <h2>Integrante</h2>
+
+                    <br>
+
+                    <div class="form-group">
+                        <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <label for="apellidos" class="col-sm-2 control-label">Apellidos</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="nombre" name="apellidos" placeholder="apellidos">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <label for="edad" class="col-sm-2 control-label">Edad</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="edad" name="edad" placeholder="edad">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <label for="peso" class="col-sm-2 control-label">Peso</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nombre" name="peso" placeholder="peso">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <label for="estatura" class="col-sm-2 control-label">Estatura</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="estatura" name="estatura" placeholder="estatura">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="foto" class="col-sm-2 control-label">Foto</label>
+                        <div class="col-sm-10">
+                            <input type="file" class="form-group" id="foto" name="foto">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p><a class="btn btn-primary" role="button" id="mostrar2">Entrenador</a></p>  
+                    </div>
+                    <div class="form-group">
+                        <p><a class="btn btn-primary" role="button" id="mostrar3">Jugador</a></p>  
+                    </div>
+
+
+                </div>
+                <div class="col-md-4">
+                    <h2>Tipo de integrante</h2>
+                    
+                    <div id="ocultar2">
+                            <br>
+                            <br>
+                            <label for="id_pais" class="col-sm-2 control-label">Pais</label>
+                            <select class="form-control">
+                                <option></option>
+                                <option>Alemania</option>
+                                <option>Brasil</option>
+                                <option>Francia</option>
+                                <option>Canada</option>
+                                <option>Belgica</option>
+                            </select>
+                        </div>
+
+                    <div id="ocultar3">   
+                            <br>
+                            <br>
+                            <div class="form-group">
+                                <label for="numero" class="col-sm-2 control-label">Numero</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="numero" name="numero" placeholder="numero">
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="form-group">
+                                <label for="posicion" class="col-sm-2 control-label">Posicion</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="nombre" name="posicion" placeholder="posicion">
+                                </div>
+                            </div>
+
+                        </div>
+                 
+
+                </div>
+            </div>          
+        </div> <!-- /container -->
+    </body>
+</html>
