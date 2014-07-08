@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Revista</title>
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datetimepicker.css" />
+		
+		// Either use the compressed version (recommended in the production site)
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery/jquery-1.10.2.min.js"></script>
+		
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>		
+		<link rel="stylesheet" href="css/bootstrapValidator.min.css"/>
+
+
+    </head>
+    <body style="background-image:url(img/fondo.png); background-attachment:fixed; background-repeat:no-repeat; background-position:center center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div role="form" id="formu">
+
+
+                        <div aling="center"><h1 id="color">Revista</h1></div>
+                        <form class="form-horizontal" role="form">
+
+                            <div class="form-group">
+                                <label for="nombre" class="col-sm-2 control-label" id="color2">Nombre</label>
+                                <div class="col-sm-10">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="portada" class="col-sm-2 control-label" id="color2">Portada</label>
+                                <div class="col-sm-10">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="fecha" class="col-sm-2 control-label" id="color2">Fecha</label>
+                                <div class="col-sm-10">
+									<div class='input-group date' id='datetimepicker2'>
+                                    <input type="date" class="form-control" id="fecha" placeholder="fecha">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+									</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="volumen" class="col-sm-2 control-label" id="color2">Volumen</label>
+                                <div class="col-sm-10">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="titulo" class="col-sm-2 control-label" id="color2">Titulo</label>
+                                <div class="col-sm-10">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="nubtitulo" class="col-sm-2 control-label" id="color2">Subtitulo</label>
+                                <div class="col-sm-10">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="numero" class="col-sm-2 control-label" id="color2">Numero</label>
+                                <div class="col-sm-10">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="clave" class="col-sm-2 control-label" id="color2">Clave</label>
+                                <div class="col-sm-10">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="directorio" class="col-sm-2 control-label" id="color2">Directorio</label>
+                                <div class="col-sm-10">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="editorial" class="col-sm-2 control-label" id="color2">Editorial</label>
+                                <div class="col-sm-10">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-primary">enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#formu').bootstrapValidator({
+                    message: 'This value is not valid',
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        username: {
+                            message: 'The username is not valid',
+                            validators: {
+                                notEmpty: {
+                                    message: 'The username is required and cannot be empty'
+                                },
+                                stringLength: {
+                                    min: 6,
+                                    max: 30,
+                                    message: 'The username must be more than 6 and less than 30 characters long'
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9_]+$/,
+                                    message: 'The username can only consist of alphabetical, number and underscore'
+                                }
+                            }
+                        },
+                        email: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'The email is required and cannot be empty'
+                                },
+                                emailAddress: {
+                                    message: 'The input is not a valid email address'
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
+		<script type="text/javascript">
+            $(function() {
+                $('#datetimepicker2').datetimepicker({
+                    language: 'espanol'
+                });
+            });
+        </script>
+		
+        
+        
+
+    </body>
+</html>
