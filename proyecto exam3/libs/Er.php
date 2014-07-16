@@ -2,15 +2,15 @@
 
 class Er {
 
-  // public function validar_foto($archivo){
-    //$var aux = $archivo.split(‘.’);
-    //if($aux[$aux.length-1] == ‘jpg’)
-    //   return true;
-    //else{
+   //public function validar_foto($archivo){
+   //$var aux = $archivo.split(‘.’);
+   //if($aux[$aux.length-1] == ‘jpg’)
+   //   return true;
+   //else{
       //alert(‘El archivo debe ser .jpg’);
-       //return false;
-    //}
- //}
+   //   return false;
+   //}
+//}
 
      public function valida_alfanumericos($valor){
 		if (!ereg("^[a-zA-Z0-9 ]+$",$valor)) {
