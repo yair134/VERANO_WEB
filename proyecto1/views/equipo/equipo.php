@@ -32,7 +32,7 @@ include ('../layouts/header.php');
 							
 							<div class="form-group">	
 								<label for="id_pais" >Pais</label>								
-								<select class="form-control" >                        
+								<select class="form-control" id="idpais" >                        
 									<option>Croacia</option>   
 									<option></option> 									
 								</select>

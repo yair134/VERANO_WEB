@@ -40,7 +40,7 @@ class Usuario extends Modelo{
         if ( !$er->valida_email($valor) ){
             $this->errores[] = "Este e-mail (".$valor.") no es valido";
         }
-
+         //recorre ,los datos para ver que no aya ya datos iguales es el record set
         $rs = $this->consulta_sql("select * from usuarios where email = '$valor'");
         $rows = $rs->GetArray();
         

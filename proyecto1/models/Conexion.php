@@ -7,7 +7,7 @@
 /**
  * Description of Conexion
  *
- * @author Oscar 
+ * @author yair
  */
 class Conexion {
     
