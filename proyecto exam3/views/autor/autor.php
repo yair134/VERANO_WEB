@@ -8,9 +8,16 @@
 	include('../../libs/adodb5/adodb.inc.php');
 	include('../../models/Conexion.php');
 	include('../../models/Modelo.php');
-	//include('../../models/continente.php');
-	//include('../../controllers/siteController/LoginController.php');
-	include('../../libs/Er.php');		
+	include('../../models/Autor.php');
+	include('../../controllers/AutorController.php');
+	include('../../libs/Er.php');	
+	
+	if(isset($_POST['nombre'])){//exclusivo para imprimir arreglos, verifica que nombre tenga algo
+
+  $autorC = new AutorController();
+  $autorC->insertaAutor($_POST);//manda llamar la accion
+ }
+	
 ?>
 
 	<div class="container">

@@ -8,15 +8,22 @@
 	include('../../libs/adodb5/adodb.inc.php');
 	include('../../models/Conexion.php');
 	include('../../models/Modelo.php');
-	//include('../../models/continente.php');
-	//include('../../controllers/siteController/LoginController.php');
-	include('../../libs/Er.php');		
+	include('../../models/Articulo.php');
+	include('../../controllers/ArticuloController.php');
+	include('../../libs/Er.php');
+	
+	if(isset($_POST['nombre'])){//exclusivo para imprimir arreglos, verifica que nombre tenga algo
+
+  $articuloC = new ArticuloController();
+  $articuloC->insertaArticulo($_POST);//manda llamar la accion
+ }
+	
 ?>
 
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">					 
-				<form id="id_revista" method="post" action=""  role="form">
+				<form id="id_articulo" method="post" action=""  role="form">
 					<div class="form-group">						
 						<label for="nombre">Nombre:</label>
 						<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre del Articulo" required>
@@ -44,15 +51,15 @@
 					</div>
 					<div class="form-group">
 						<label for="concluciones">Concluciones:</label>
-						<input type="text" class="form-control" id="conclusiones" name="conclusiones" placeholder="introduzca conclusiones" required></textarea>
+						<textarea type="text" class="form-control" id="conclusiones" name="conclusiones" placeholder="introduzca conclusiones" required></textarea>
 					</div>
 					<div class="form-group">
 						<label for="agradecimientos">Agradecimientos:</label>
-						<input type="text" class="form-control" id="agradecimientos" name="agradecimientos" placeholder="introduzca los agradecimientos" required></textarea>
+						<textarea type="text" class="form-control" id="agradecimientos" name="agradecimientos" placeholder="introduzca los agradecimientos" required></textarea>
 					</div>
 					<div class="form-group">
 						<label for="referencias">Referencias:</label>
-						<input type="text" class="form-control" id="referencias" name="referencias" placeholder="introduzca referencias" required></textarea>
+						<textarea type="text" class="form-control" id="referencias" name="referencias" placeholder="introduzca referencias" required></textarea>
 					</div>
 					
 					<label for="fecha_creacion">fecha de creacion:</label>

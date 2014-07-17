@@ -21,6 +21,10 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
+DROP SCHEMA IF EXISTS `revista` ;
+CREATE SCHEMA IF NOT EXISTS `revista` DEFAULT CHARACTER SET utf8 ;
+USE `revista` ;
+
 
 --
 -- Estructura de tabla para la tabla `articulo`

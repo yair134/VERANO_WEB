@@ -8,15 +8,23 @@
 	include('../../libs/adodb5/adodb.inc.php');
 	include('../../models/Conexion.php');
 	include('../../models/Modelo.php');
-	//include('../../models/continente.php');
-	//include('../../controllers/siteController/LoginController.php');
-	include('../../libs/Er.php');		
+	include('../../models/status.php');
+	include('../../controllers/StatusController.php');
+	include('../../libs/Er.php');
+	
+	if(isset($_POST['status'])){//exclusivo para imprimir arreglos, verifica que nombre tenga algo
+
+  $articuloC = new StatusController();
+  $articuloC->insertaStatus($_POST);//manda llamar la accion
+ }
+
+	
 ?>
 
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">		
-					<form id="form1" method="post" action=""  class="form-inline" role="form">
+					<form id="id_status" method="post" action=""  class="form-inline" role="form">
 
 							<div class="form-group" >
 								<label for="status">Status: </label>

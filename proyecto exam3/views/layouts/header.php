@@ -11,8 +11,8 @@
         <title>Examen 3</title>
 
         <!-- Bootstrap -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script type="text/javascript" src="../jquery/jquery-1.10.2.min.js"></script>
+		
+		<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
         	
 		<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
         <link rel="stylesheet" href="../source/jquery.fancybox.css" type="text/css" media="screen"/>
@@ -27,7 +27,7 @@
 		
 		<script type="text/javascript" src="../js/bootstrapValidator.min.js"></script>
         <link rel="stylesheet" href="../css/bootstrapValidator.min.css"/>
-		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-datetimepicker.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-datetimepicker.css"/>
 		        
 		
         

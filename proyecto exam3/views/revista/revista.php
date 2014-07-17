@@ -8,9 +8,15 @@
 	include('../../libs/adodb5/adodb.inc.php');
 	include('../../models/Conexion.php');
 	include('../../models/Modelo.php');
-	//include('../../models/continente.php');
-	//include('../../controllers/siteController/LoginController.php');
+	include('../../models/Revista.php');
+	include('../../controllers/RevistaController.php');
 	include('../../libs/Er.php');		
+	
+	if(isset($_POST['nombre'])){//exclusivo para imprimir arreglos, verifica que nombre tenga algo
+
+  $revistaC = new RevistaController();
+  $revistaC->insertaRevista($_POST);//manda llamar la accion
+ }
 ?>
 
 	
@@ -75,13 +81,10 @@
 			</ul>
 		</div>		
 	</div>
-	
 	<script type="text/javascript">
             $(function() {
-                $('#datetimepicker1').datetimepicker({
-                    language: 'espanol'
-                });
+                $('#datetimepicker1').datetimepicker();
             });
-    </script>
+        </script>
       
 <?php include ('../layouts/footer.php'); ?>
